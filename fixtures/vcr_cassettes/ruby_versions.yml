@@ -1,0 +1,139 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/alphagov/finder-frontend/master/.ruby-version
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - '"2bf1c1ccf363acd53eaf92ef33a7f11f5f4557c2"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Geo-Block-List:
+      - ''
+      X-Github-Request-Id:
+      - B91F1217:089B:13643A65:584C8725
+      Content-Length:
+      - '6'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 10 Dec 2016 22:52:21 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lcy1121-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1481410341.845286,VS0,VE117
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - dfcf91bbe22d9330dd160d853a05906410c1f409
+      Expires:
+      - Sat, 10 Dec 2016 22:57:21 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        2.3.1
+    http_version: 
+  recorded_at: Sat, 10 Dec 2016 22:52:21 GMT
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/alphagov/government-frontend/master/.ruby-version
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - '"2bf1c1ccf363acd53eaf92ef33a7f11f5f4557c2"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Geo-Block-List:
+      - ''
+      X-Github-Request-Id:
+      - B91F122E:5FAA:CC016FE:584C8725
+      Content-Length:
+      - '6'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 10 Dec 2016 22:52:22 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lcy1132-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1481410341.851246,VS0,VE616
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - 5081f7db6eae22d6d9ea31e550b2b2324971422c
+      Expires:
+      - Sat, 10 Dec 2016 22:57:22 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        2.3.1
+    http_version: 
+  recorded_at: Sat, 10 Dec 2016 22:52:22 GMT
+recorded_with: VCR 3.0.3
