@@ -18,7 +18,11 @@ class RubyVersions
     hydra.run
 
     requests.reduce({}) do |h, (repo_name, request)|
-      h[repo_name] = request.response.body.strip
+      if request.response.success?
+        h[repo_name] = request.response.body.strip
+      else
+        h[repo_name] = nil
+      end
       h
     end
   end

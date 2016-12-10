@@ -2,6 +2,397 @@
 http_interactions:
 - request:
     method: get
+    uri: https://raw.githubusercontent.com/something-unfindable/master/Gemfile.lock
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Github-Request-Id:
+      - B91F122B:595F:1B581452:584C8BBE
+      Content-Length:
+      - '21'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 10 Dec 2016 23:11:58 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lcy1137-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1481411518.840516,VS0,VE87
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - f42aa0ac95fab7b9b20a61d5707f2ca4b6e436a4
+      Expires:
+      - Sat, 10 Dec 2016 23:16:58 GMT
+    body:
+      encoding: UTF-8
+      string: |
+        400: Invalid request
+    http_version: 
+  recorded_at: Sat, 10 Dec 2016 23:11:58 GMT
+- request:
+    method: get
+    uri: https://raw.githubusercontent.com/alphagov/government-frontend/master/Gemfile.lock
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Security-Policy:
+      - default-src 'none'; style-src 'unsafe-inline'
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      Etag:
+      - '"5937e4d9929354b4d15b55f5dd8b93700063e878"'
+      Content-Type:
+      - text/plain; charset=utf-8
+      Cache-Control:
+      - max-age=300
+      X-Geo-Block-List:
+      - ''
+      X-Github-Request-Id:
+      - B91F122F:62FC:18374B20:584C8BBE
+      Content-Length:
+      - '6511'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 10 Dec 2016 23:11:58 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-lcy1146-LCY
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1481411518.835332,VS0,VE122
+      Vary:
+      - Authorization,Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fastly-Request-Id:
+      - b55ee139819170df49358fd487e0e6804510a88d
+      Expires:
+      - Sat, 10 Dec 2016 23:16:58 GMT
+      Source-Age:
+      - '0'
+    body:
+      encoding: UTF-8
+      string: |
+        GEM
+          remote: https://rubygems.org/
+          specs:
+            PriorityQueue (0.1.2)
+            actioncable (5.0.0.1)
+              actionpack (= 5.0.0.1)
+              nio4r (~> 1.2)
+              websocket-driver (~> 0.6.1)
+            actionmailer (5.0.0.1)
+              actionpack (= 5.0.0.1)
+              actionview (= 5.0.0.1)
+              activejob (= 5.0.0.1)
+              mail (~> 2.5, >= 2.5.4)
+              rails-dom-testing (~> 2.0)
+            actionpack (5.0.0.1)
+              actionview (= 5.0.0.1)
+              activesupport (= 5.0.0.1)
+              rack (~> 2.0)
+              rack-test (~> 0.6.3)
+              rails-dom-testing (~> 2.0)
+              rails-html-sanitizer (~> 1.0, >= 1.0.2)
+            actionview (5.0.0.1)
+              activesupport (= 5.0.0.1)
+              builder (~> 3.1)
+              erubis (~> 2.7.0)
+              rails-dom-testing (~> 2.0)
+              rails-html-sanitizer (~> 1.0, >= 1.0.2)
+            activejob (5.0.0.1)
+              activesupport (= 5.0.0.1)
+              globalid (>= 0.3.6)
+            activemodel (5.0.0.1)
+              activesupport (= 5.0.0.1)
+            activerecord (5.0.0.1)
+              activemodel (= 5.0.0.1)
+              activesupport (= 5.0.0.1)
+              arel (~> 7.0)
+            activesupport (5.0.0.1)
+              concurrent-ruby (~> 1.0, >= 1.0.2)
+              i18n (~> 0.7)
+              minitest (~> 5.1)
+              tzinfo (~> 1.1)
+            addressable (2.3.8)
+            airbrake (5.5.0)
+              airbrake-ruby (~> 1.5)
+            airbrake-ruby (1.5.0)
+            arel (7.1.1)
+            ast (2.3.0)
+            better_errors (2.1.1)
+              coderay (>= 1.0.0)
+              erubis (>= 2.6.6)
+              rack (>= 0.9.0)
+            binding_of_caller (0.7.2)
+              debug_inspector (>= 0.0.1)
+            builder (3.2.2)
+            byebug (9.0.5)
+            capybara (2.7.1)
+              addressable
+              mime-types (>= 1.16)
+              nokogiri (>= 1.3.3)
+              rack (>= 1.0.0)
+              rack-test (>= 0.5.4)
+              xpath (~> 2.0)
+            coderay (1.1.1)
+            concurrent-ruby (1.0.2)
+            crack (0.4.3)
+              safe_yaml (~> 1.0.0)
+            debug_inspector (0.0.2)
+            domain_name (0.5.20160826)
+              unf (>= 0.0.5, < 1.0.0)
+            erubis (2.7.0)
+            execjs (2.7.0)
+            gds-api-adapters (37.5.1)
+              link_header
+              lrucache (~> 0.1.1)
+              null_logger
+              plek (>= 1.9.0)
+              rack-cache
+              rest-client (~> 2.0)
+            globalid (0.3.7)
+              activesupport (>= 4.1.0)
+            govuk-content-schema-test-helpers (1.1.0)
+              json-schema (~> 2.5.1)
+            govuk-lint (1.2.0)
+              rubocop (~> 0.39.0)
+              scss_lint
+            govuk_frontend_toolkit (2.0.1)
+              rails (>= 3.1.0)
+              sass (>= 3.2.0)
+            govuk_navigation_helpers (1.0.0)
+            http-cookie (1.0.3)
+              domain_name (~> 0.5)
+            i18n (0.7.0)
+            json (2.0.2)
+            json-schema (2.5.2)
+              addressable (~> 2.3.8)
+            kgio (2.10.0)
+            link_header (0.0.8)
+            logstash-event (1.1.5)
+            logstasher (0.6.1)
+              logstash-event (~> 1.1.0)
+              request_store
+            loofah (2.0.3)
+              nokogiri (>= 1.5.9)
+            lrucache (0.1.4)
+              PriorityQueue (~> 0.1.2)
+            mail (2.6.4)
+              mime-types (>= 1.16, < 4)
+            metaclass (0.0.4)
+            method_source (0.8.2)
+            mime-types (2.99.2)
+            mini_portile2 (2.1.0)
+            minitest (5.9.0)
+            mocha (1.1.0)
+              metaclass (~> 0.0.1)
+            netrc (0.11.0)
+            nio4r (1.2.1)
+            nokogiri (1.6.8)
+              mini_portile2 (~> 2.1.0)
+              pkg-config (~> 1.1.7)
+            null_logger (0.0.1)
+            parser (2.3.1.2)
+              ast (~> 2.2)
+            pkg-config (1.1.7)
+            plek (1.11.0)
+            powerpack (0.1.1)
+            pry (0.10.4)
+              coderay (~> 1.1.0)
+              method_source (~> 0.8.1)
+              slop (~> 3.4)
+            pry-byebug (3.4.0)
+              byebug (~> 9.0)
+              pry (~> 0.10)
+            rack (2.0.1)
+            rack-cache (1.6.1)
+              rack (>= 0.4)
+            rack-test (0.6.3)
+              rack (>= 1.0)
+            rails (5.0.0.1)
+              actioncable (= 5.0.0.1)
+              actionmailer (= 5.0.0.1)
+              actionpack (= 5.0.0.1)
+              actionview (= 5.0.0.1)
+              activejob (= 5.0.0.1)
+              activemodel (= 5.0.0.1)
+              activerecord (= 5.0.0.1)
+              activesupport (= 5.0.0.1)
+              bundler (>= 1.3.0, < 2.0)
+              railties (= 5.0.0.1)
+              sprockets-rails (>= 2.0.0)
+            rails-controller-testing (0.1.1)
+              actionpack (~> 5.x)
+              actionview (~> 5.x)
+              activesupport (~> 5.x)
+            rails-dom-testing (2.0.1)
+              activesupport (>= 4.2.0, < 6.0)
+              nokogiri (~> 1.6.0)
+            rails-html-sanitizer (1.0.3)
+              loofah (~> 2.0)
+            rails-i18n (5.0.0)
+              i18n (~> 0.7)
+              railties (~> 5.0)
+            rails_translation_manager (0.0.2)
+              activesupport
+              rails-i18n
+            railties (5.0.0.1)
+              actionpack (= 5.0.0.1)
+              activesupport (= 5.0.0.1)
+              method_source
+              rake (>= 0.8.7)
+              thor (>= 0.18.1, < 2.0)
+            rainbow (2.1.0)
+            raindrops (0.17.0)
+            rake (11.2.2)
+            request_store (1.3.1)
+            rest-client (2.0.0)
+              http-cookie (>= 1.0.2, < 2.0)
+              mime-types (>= 1.16, < 4.0)
+              netrc (~> 0.8)
+            rubocop (0.39.0)
+              parser (>= 2.3.0.7, < 3.0)
+              powerpack (~> 0.1)
+              rainbow (>= 1.99.1, < 3.0)
+              ruby-progressbar (~> 1.7)
+              unicode-display_width (~> 1.0, >= 1.0.1)
+            ruby-progressbar (1.8.1)
+            safe_yaml (1.0.4)
+            sass (3.4.22)
+            sass-rails (5.0.6)
+              railties (>= 4.0.0, < 6)
+              sass (~> 3.1)
+              sprockets (>= 2.8, < 4.0)
+              sprockets-rails (>= 2.0, < 4.0)
+              tilt (>= 1.1, < 3)
+            scss_lint (0.49.0)
+              rake (>= 0.9, < 12)
+              sass (~> 3.4.20)
+            slimmer (9.6.0)
+              activesupport
+              json
+              nokogiri (>= 1.5.0, < 1.7.0)
+              null_logger
+              plek (>= 1.1.0)
+              rack
+              rest-client
+            slop (3.6.0)
+            sprockets (3.7.0)
+              concurrent-ruby (~> 1.0)
+              rack (> 1, < 3)
+            sprockets-rails (3.1.1)
+              actionpack (>= 4.0)
+              activesupport (>= 4.0)
+              sprockets (>= 3.0.0)
+            thor (0.19.1)
+            thread_safe (0.3.5)
+            tilt (2.0.5)
+            tzinfo (1.2.2)
+              thread_safe (~> 0.1)
+            uglifier (3.0.1)
+              execjs (>= 0.3.0, < 3)
+            unf (0.1.4)
+              unf_ext
+            unf_ext (0.0.7.2)
+            unicode-display_width (1.1.0)
+            unicorn (4.8.0)
+              kgio (~> 2.6)
+              rack
+              raindrops (~> 0.7)
+            webmock (1.18.0)
+              addressable (>= 2.3.6)
+              crack (>= 0.3.2)
+            websocket-driver (0.6.4)
+              websocket-extensions (>= 0.1.0)
+            websocket-extensions (0.1.2)
+            xpath (2.0.0)
+              nokogiri (~> 1.3)
+
+        PLATFORMS
+          ruby
+
+        DEPENDENCIES
+          airbrake (~> 5.5)
+          airbrake-ruby (= 1.5)
+          better_errors
+          binding_of_caller
+          capybara
+          gds-api-adapters (= 37.5.1)
+          govuk-content-schema-test-helpers (= 1.1.0)
+          govuk-lint
+          govuk_frontend_toolkit (= 2.0.1)
+          govuk_navigation_helpers (~> 1.0)
+          logstasher (= 0.6.1)
+          mocha
+          plek (= 1.11)
+          pry-byebug
+          rails (~> 5.0)
+          rails-controller-testing (~> 0.1)
+          rails-i18n (>= 4.0.4)
+          rails_translation_manager (~> 0.0.2)
+          sass-rails (~> 5.0.4)
+          slimmer (= 9.6.0)
+          uglifier (>= 1.3.0)
+          unicorn (= 4.8)
+          webmock (~> 1.18.0)
+
+        BUNDLED WITH
+           1.12.5
+    http_version: 
+  recorded_at: Sat, 10 Dec 2016 23:11:58 GMT
+- request:
+    method: get
     uri: https://raw.githubusercontent.com/alphagov/finder-frontend/master/Gemfile.lock
     body:
       encoding: US-ASCII
@@ -33,33 +424,33 @@ http_interactions:
       X-Geo-Block-List:
       - ''
       X-Github-Request-Id:
-      - B91F1214:0869:E131E70:584C867D
+      - B91F1214:0867:18497F71:584C8BBE
       Content-Length:
       - '7221'
       Accept-Ranges:
       - bytes
       Date:
-      - Sat, 10 Dec 2016 22:49:33 GMT
+      - Sat, 10 Dec 2016 23:11:58 GMT
       Via:
       - 1.1 varnish
       Connection:
       - keep-alive
       X-Served-By:
-      - cache-lcy1142-LCY
+      - cache-lcy1151-LCY
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
       X-Timer:
-      - S1481410173.745624,VS0,VE112
+      - S1481411518.847517,VS0,VE110
       Vary:
       - Authorization,Accept-Encoding
       Access-Control-Allow-Origin:
       - "*"
       X-Fastly-Request-Id:
-      - d3078439916031ea3c76230e5391f1ba9d9de0e7
+      - e0959396cb0ba6c01df98f1b1830b5465199e933
       Expires:
-      - Sat, 10 Dec 2016 22:54:33 GMT
+      - Sat, 10 Dec 2016 23:16:58 GMT
       Source-Age:
       - '0'
     body:
@@ -358,338 +749,5 @@ http_interactions:
         BUNDLED WITH
            1.12.5
     http_version: 
-  recorded_at: Sat, 10 Dec 2016 22:49:33 GMT
-- request:
-    method: get
-    uri: https://raw.githubusercontent.com/alphagov/government-frontend/master/Gemfile.lock
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Typhoeus - https://github.com/typhoeus/typhoeus
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Security-Policy:
-      - default-src 'none'; style-src 'unsafe-inline'
-      Strict-Transport-Security:
-      - max-age=31536000
-      X-Content-Type-Options:
-      - nosniff
-      X-Frame-Options:
-      - deny
-      X-Xss-Protection:
-      - 1; mode=block
-      Etag:
-      - '"5937e4d9929354b4d15b55f5dd8b93700063e878"'
-      Content-Type:
-      - text/plain; charset=utf-8
-      Cache-Control:
-      - max-age=300
-      X-Geo-Block-List:
-      - ''
-      X-Github-Request-Id:
-      - B91F122F:62FC:1835959F:584C867D
-      Content-Length:
-      - '6511'
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Sat, 10 Dec 2016 22:49:33 GMT
-      Via:
-      - 1.1 varnish
-      Connection:
-      - keep-alive
-      X-Served-By:
-      - cache-lcy1140-LCY
-      X-Cache:
-      - MISS
-      X-Cache-Hits:
-      - '0'
-      X-Timer:
-      - S1481410173.757562,VS0,VE103
-      Vary:
-      - Authorization,Accept-Encoding
-      Access-Control-Allow-Origin:
-      - "*"
-      X-Fastly-Request-Id:
-      - c5590008a2c1de8a1a6cd143380985d701d9342a
-      Expires:
-      - Sat, 10 Dec 2016 22:54:33 GMT
-      Source-Age:
-      - '0'
-    body:
-      encoding: UTF-8
-      string: |
-        GEM
-          remote: https://rubygems.org/
-          specs:
-            PriorityQueue (0.1.2)
-            actioncable (5.0.0.1)
-              actionpack (= 5.0.0.1)
-              nio4r (~> 1.2)
-              websocket-driver (~> 0.6.1)
-            actionmailer (5.0.0.1)
-              actionpack (= 5.0.0.1)
-              actionview (= 5.0.0.1)
-              activejob (= 5.0.0.1)
-              mail (~> 2.5, >= 2.5.4)
-              rails-dom-testing (~> 2.0)
-            actionpack (5.0.0.1)
-              actionview (= 5.0.0.1)
-              activesupport (= 5.0.0.1)
-              rack (~> 2.0)
-              rack-test (~> 0.6.3)
-              rails-dom-testing (~> 2.0)
-              rails-html-sanitizer (~> 1.0, >= 1.0.2)
-            actionview (5.0.0.1)
-              activesupport (= 5.0.0.1)
-              builder (~> 3.1)
-              erubis (~> 2.7.0)
-              rails-dom-testing (~> 2.0)
-              rails-html-sanitizer (~> 1.0, >= 1.0.2)
-            activejob (5.0.0.1)
-              activesupport (= 5.0.0.1)
-              globalid (>= 0.3.6)
-            activemodel (5.0.0.1)
-              activesupport (= 5.0.0.1)
-            activerecord (5.0.0.1)
-              activemodel (= 5.0.0.1)
-              activesupport (= 5.0.0.1)
-              arel (~> 7.0)
-            activesupport (5.0.0.1)
-              concurrent-ruby (~> 1.0, >= 1.0.2)
-              i18n (~> 0.7)
-              minitest (~> 5.1)
-              tzinfo (~> 1.1)
-            addressable (2.3.8)
-            airbrake (5.5.0)
-              airbrake-ruby (~> 1.5)
-            airbrake-ruby (1.5.0)
-            arel (7.1.1)
-            ast (2.3.0)
-            better_errors (2.1.1)
-              coderay (>= 1.0.0)
-              erubis (>= 2.6.6)
-              rack (>= 0.9.0)
-            binding_of_caller (0.7.2)
-              debug_inspector (>= 0.0.1)
-            builder (3.2.2)
-            byebug (9.0.5)
-            capybara (2.7.1)
-              addressable
-              mime-types (>= 1.16)
-              nokogiri (>= 1.3.3)
-              rack (>= 1.0.0)
-              rack-test (>= 0.5.4)
-              xpath (~> 2.0)
-            coderay (1.1.1)
-            concurrent-ruby (1.0.2)
-            crack (0.4.3)
-              safe_yaml (~> 1.0.0)
-            debug_inspector (0.0.2)
-            domain_name (0.5.20160826)
-              unf (>= 0.0.5, < 1.0.0)
-            erubis (2.7.0)
-            execjs (2.7.0)
-            gds-api-adapters (37.5.1)
-              link_header
-              lrucache (~> 0.1.1)
-              null_logger
-              plek (>= 1.9.0)
-              rack-cache
-              rest-client (~> 2.0)
-            globalid (0.3.7)
-              activesupport (>= 4.1.0)
-            govuk-content-schema-test-helpers (1.1.0)
-              json-schema (~> 2.5.1)
-            govuk-lint (1.2.0)
-              rubocop (~> 0.39.0)
-              scss_lint
-            govuk_frontend_toolkit (2.0.1)
-              rails (>= 3.1.0)
-              sass (>= 3.2.0)
-            govuk_navigation_helpers (1.0.0)
-            http-cookie (1.0.3)
-              domain_name (~> 0.5)
-            i18n (0.7.0)
-            json (2.0.2)
-            json-schema (2.5.2)
-              addressable (~> 2.3.8)
-            kgio (2.10.0)
-            link_header (0.0.8)
-            logstash-event (1.1.5)
-            logstasher (0.6.1)
-              logstash-event (~> 1.1.0)
-              request_store
-            loofah (2.0.3)
-              nokogiri (>= 1.5.9)
-            lrucache (0.1.4)
-              PriorityQueue (~> 0.1.2)
-            mail (2.6.4)
-              mime-types (>= 1.16, < 4)
-            metaclass (0.0.4)
-            method_source (0.8.2)
-            mime-types (2.99.2)
-            mini_portile2 (2.1.0)
-            minitest (5.9.0)
-            mocha (1.1.0)
-              metaclass (~> 0.0.1)
-            netrc (0.11.0)
-            nio4r (1.2.1)
-            nokogiri (1.6.8)
-              mini_portile2 (~> 2.1.0)
-              pkg-config (~> 1.1.7)
-            null_logger (0.0.1)
-            parser (2.3.1.2)
-              ast (~> 2.2)
-            pkg-config (1.1.7)
-            plek (1.11.0)
-            powerpack (0.1.1)
-            pry (0.10.4)
-              coderay (~> 1.1.0)
-              method_source (~> 0.8.1)
-              slop (~> 3.4)
-            pry-byebug (3.4.0)
-              byebug (~> 9.0)
-              pry (~> 0.10)
-            rack (2.0.1)
-            rack-cache (1.6.1)
-              rack (>= 0.4)
-            rack-test (0.6.3)
-              rack (>= 1.0)
-            rails (5.0.0.1)
-              actioncable (= 5.0.0.1)
-              actionmailer (= 5.0.0.1)
-              actionpack (= 5.0.0.1)
-              actionview (= 5.0.0.1)
-              activejob (= 5.0.0.1)
-              activemodel (= 5.0.0.1)
-              activerecord (= 5.0.0.1)
-              activesupport (= 5.0.0.1)
-              bundler (>= 1.3.0, < 2.0)
-              railties (= 5.0.0.1)
-              sprockets-rails (>= 2.0.0)
-            rails-controller-testing (0.1.1)
-              actionpack (~> 5.x)
-              actionview (~> 5.x)
-              activesupport (~> 5.x)
-            rails-dom-testing (2.0.1)
-              activesupport (>= 4.2.0, < 6.0)
-              nokogiri (~> 1.6.0)
-            rails-html-sanitizer (1.0.3)
-              loofah (~> 2.0)
-            rails-i18n (5.0.0)
-              i18n (~> 0.7)
-              railties (~> 5.0)
-            rails_translation_manager (0.0.2)
-              activesupport
-              rails-i18n
-            railties (5.0.0.1)
-              actionpack (= 5.0.0.1)
-              activesupport (= 5.0.0.1)
-              method_source
-              rake (>= 0.8.7)
-              thor (>= 0.18.1, < 2.0)
-            rainbow (2.1.0)
-            raindrops (0.17.0)
-            rake (11.2.2)
-            request_store (1.3.1)
-            rest-client (2.0.0)
-              http-cookie (>= 1.0.2, < 2.0)
-              mime-types (>= 1.16, < 4.0)
-              netrc (~> 0.8)
-            rubocop (0.39.0)
-              parser (>= 2.3.0.7, < 3.0)
-              powerpack (~> 0.1)
-              rainbow (>= 1.99.1, < 3.0)
-              ruby-progressbar (~> 1.7)
-              unicode-display_width (~> 1.0, >= 1.0.1)
-            ruby-progressbar (1.8.1)
-            safe_yaml (1.0.4)
-            sass (3.4.22)
-            sass-rails (5.0.6)
-              railties (>= 4.0.0, < 6)
-              sass (~> 3.1)
-              sprockets (>= 2.8, < 4.0)
-              sprockets-rails (>= 2.0, < 4.0)
-              tilt (>= 1.1, < 3)
-            scss_lint (0.49.0)
-              rake (>= 0.9, < 12)
-              sass (~> 3.4.20)
-            slimmer (9.6.0)
-              activesupport
-              json
-              nokogiri (>= 1.5.0, < 1.7.0)
-              null_logger
-              plek (>= 1.1.0)
-              rack
-              rest-client
-            slop (3.6.0)
-            sprockets (3.7.0)
-              concurrent-ruby (~> 1.0)
-              rack (> 1, < 3)
-            sprockets-rails (3.1.1)
-              actionpack (>= 4.0)
-              activesupport (>= 4.0)
-              sprockets (>= 3.0.0)
-            thor (0.19.1)
-            thread_safe (0.3.5)
-            tilt (2.0.5)
-            tzinfo (1.2.2)
-              thread_safe (~> 0.1)
-            uglifier (3.0.1)
-              execjs (>= 0.3.0, < 3)
-            unf (0.1.4)
-              unf_ext
-            unf_ext (0.0.7.2)
-            unicode-display_width (1.1.0)
-            unicorn (4.8.0)
-              kgio (~> 2.6)
-              rack
-              raindrops (~> 0.7)
-            webmock (1.18.0)
-              addressable (>= 2.3.6)
-              crack (>= 0.3.2)
-            websocket-driver (0.6.4)
-              websocket-extensions (>= 0.1.0)
-            websocket-extensions (0.1.2)
-            xpath (2.0.0)
-              nokogiri (~> 1.3)
-
-        PLATFORMS
-          ruby
-
-        DEPENDENCIES
-          airbrake (~> 5.5)
-          airbrake-ruby (= 1.5)
-          better_errors
-          binding_of_caller
-          capybara
-          gds-api-adapters (= 37.5.1)
-          govuk-content-schema-test-helpers (= 1.1.0)
-          govuk-lint
-          govuk_frontend_toolkit (= 2.0.1)
-          govuk_navigation_helpers (~> 1.0)
-          logstasher (= 0.6.1)
-          mocha
-          plek (= 1.11)
-          pry-byebug
-          rails (~> 5.0)
-          rails-controller-testing (~> 0.1)
-          rails-i18n (>= 4.0.4)
-          rails_translation_manager (~> 0.0.2)
-          sass-rails (~> 5.0.4)
-          slimmer (= 9.6.0)
-          uglifier (>= 1.3.0)
-          unicorn (= 4.8)
-          webmock (~> 1.18.0)
-
-        BUNDLED WITH
-           1.12.5
-    http_version: 
-  recorded_at: Sat, 10 Dec 2016 22:49:33 GMT
+  recorded_at: Sat, 10 Dec 2016 23:11:58 GMT
 recorded_with: VCR 3.0.3
