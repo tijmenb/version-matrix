@@ -1,0 +1,6 @@
+# This is a CloudFoundry manifest used to run this app on the Government PaaS
+---
+applications:
+- name: version-matrix
+  memory: 256M
+  disk_quota: 256M
