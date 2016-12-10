@@ -12,12 +12,12 @@ end
 
 get '/ruby-versions' do
   content_type :json
-  result = RubyVersions.new(params[:repos]).as_json
+  result = RubyVersions.new(Array[params[:repos]].flatten).as_json
   JSON.pretty_generate(result)
 end
 
 get '/gem-versions' do
   content_type :json
-  result = GemVersions.new(params[:repos], params[:gems]).as_json
+  result = GemVersions.new(Array[params[:repos]].flatten, Array[params[:gems]].flatten).as_json
   JSON.pretty_generate(result)
 end
